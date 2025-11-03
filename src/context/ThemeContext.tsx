@@ -24,7 +24,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
                 setTheme(stored);
             });
         }
-    }, []);
+    }, [theme]);
 
     useEffect(() => {
         if (typeof document !== "undefined") {
