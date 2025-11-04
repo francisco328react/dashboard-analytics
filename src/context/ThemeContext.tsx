@@ -18,12 +18,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
         if (typeof window === "undefined") return;
 
-        const stored = localStorage.getItem("theme") as "light" | "dark" | null;
-        if (stored && stored !== theme) {
-            startTransition(() => {
-                setTheme(stored);
-            });
-        }
+        // const stored = localStorage.getItem("theme") as "light" | "dark" | null;
+        // if (stored && stored !== theme) {
+        //     startTransition(() => {
+        //         setTheme(stored);
+        //     });
+        // }
     }, [theme]);
 
     useEffect(() => {
